@@ -1,9 +1,24 @@
-# RePKG
+# RePKG (Linux Fork)
 Wallpaper engine PKG unpacker/TEX converter, written in C#.
 
-PKG and TEX formats reverse engineered by me.
+**Note:** This is a fork adapted specifically for Linux, updated to build with .NET 10.0 so you don't need to install legacy Windows frameworks.
 
-Feel free to report errors.
+PKG and TEX formats reverse engineered by the original author.
+
+## Building and Running on Linux
+
+You must have the .NET 10 SDK installed to build and run this application.
+
+```bash
+# Build the application
+dotnet clean
+dotnet build -c Release
+
+# Run the executable
+./RePKG/bin/Release/net10.0/RePKG help
+# Alternatively, you can run the dll using dotnet
+dotnet ./RePKG/bin/Release/net10.0/RePKG.dll help
+```
 
 # Features
 - Extract PKG files
